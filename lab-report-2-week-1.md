@@ -18,7 +18,8 @@ Wait 10-15 minutes for the password change to take effect. In the meantime, go t
 
 Once the password change has taken effect, go to Terminal -> New Terminal
 
-In the new terminal, run `ssh cs15lfa22zz@ieng6.ucsd.edu`, replacing `cs15lfa22zz` with your own specific account name.
+In the new terminal, run `ssh cs15lfa22zz@ieng6.ucsd.edu`, replacing `cs15lfa22zz` with your own specific account name, then enter you password.
+You should now be able to run commands on the UCSD server.
 
 *No screenshots of OpenSSH installation process (completed before lab)*
 
