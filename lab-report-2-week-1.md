@@ -72,10 +72,10 @@ Use the command `ssh-keygen` and do not set a passphrase. Use the default key st
 Next, ssh into the server and make a directory called .ssh: `mkdir .ssh`. Use scp to copy the generated key file into the .ssh directory on the server.
 Now, logging into the server should look like this:
 
-![image7](lab1-7.png)
+![image8](lab1-8.png)
 
 ## Optimization
 
 Using semicolons between commands allows multiple commands on the same line. Using a script file to condense multiple files allows for less keystokes when performing repeated actions.
 
-![image8](lab1-8.png)
+![image9](lab1-9.png)
