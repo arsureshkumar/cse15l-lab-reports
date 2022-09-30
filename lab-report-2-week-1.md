@@ -38,6 +38,29 @@ You can now try some commands on the UCSD server, such as mkdir, pwd, cd, ls, et
 
 ![image4](lab1-4.png)
 
+Use `exit` to end the ssh session.
+
 ## SCP
+
+On your own computer, create a java file called WhereAmI.java with this code:
+
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+
+![image5](lab1-5.png)
+
+Now, you can use `scp` to copy the file over to the server, using the following command: `scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/`
+After logging into the UCSD server again, WhereAmI.java should be visible, compilable, and runnable using terminal commands.
+
+![image6](lab1-6.png)
+
 ## Keys
 ## Optimization
