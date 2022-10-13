@@ -1,4 +1,3 @@
-# CSE 15 Lab Reports
 
 [Markdown Sample Page](markdown-sample.html)
 

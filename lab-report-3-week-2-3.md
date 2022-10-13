@@ -70,4 +70,3 @@ The URL in the above screenshot calls the handleRequest method. This method uses
 The URL in the above screenshot calls the handleRequest method. This method uses if statements based on the value returned by the URL.getpath() method to direct the program down the /query path. Then, the program extracts the query value by splitting the query around the "=" sign, and iterates through the stored list values to return a list with only the strings that contain the query.
 
 ## Week 3 - Bugs
-
