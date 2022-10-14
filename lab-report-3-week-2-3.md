@@ -70,3 +70,27 @@ The URL in the above screenshot calls the handleRequest method. This method uses
 The URL in the above screenshot calls the handleRequest method. This method uses if statements based on the value returned by the URL.getpath() method to direct the program down the /query path. Then, the program extracts the query value by splitting the query around the "=" sign, and iterates through the stored list values to return a list with only the strings that contain the query.
 
 ## Week 3 - Bugs
+
+### ReverseInPlace()
+
+Failure inducing input for reverseInPlace():
+
+![image3](week3pictures/0.png)
+
+Symptom:
+
+![image4](week3pictures/1.png)
+
+Fix:
+
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[arr.length - i - 1] = arr[i];
+    }
+    return newArray;
+  }
+```
+
+Because reverseInPlace() overwrites the initial elements with the elements from the end of the array, when the loop is editing the ending elements, it looks to the overwritten values, making the list a mirror on the midpoint. To fix this, a temp variable can store the value of one side of the midpoint, so it is not overwritten, while the values are switched.
