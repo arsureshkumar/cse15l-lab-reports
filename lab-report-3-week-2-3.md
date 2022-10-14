@@ -71,17 +71,24 @@ The URL in the above screenshot calls the handleRequest method. This method uses
 
 ## Week 3 - Bugs
 
-### ReverseInPlace()
+### ArrayExamples - ReverseInPlace()
 
 Failure inducing input for reverseInPlace():
 
-![image3](week3pictures/0.png)
+```
+@Test 
+	public void testReverseInPlace2() {
+    int[] input2 = {1, 2, 3, 4, 5};
+    ArrayExamples.reverseInPlace(input2);
+    assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input2);
+	}
+```
 
 Symptom:
 
-![image4](week3pictures/1.png)
+![image3](week3pictures/0.png)
 
-Fix:
+Fixed code:
 
 ```
 static int[] reversed(int[] arr) {
@@ -94,3 +101,40 @@ static int[] reversed(int[] arr) {
 ```
 
 Because reverseInPlace() overwrites the initial elements with the elements from the end of the array, when the loop is editing the ending elements, it looks to the overwritten values, making the list a mirror on the midpoint. To fix this, a temp variable can store the value of one side of the midpoint, so it is not overwritten, while the values are switched.
+
+### ListExamples - merge()
+
+Failure inducing input for merge():
+```
+@Test
+    public void mergeTest(){
+
+        List<String> input1 = new ArrayList<String>();
+        input1.add("a");
+        input1.add("c");
+
+        List<String> input2 = new ArrayList<String>();
+        input2.add("b");
+        input2.add("d");
+
+        List<String> mergedInputs = new ArrayList<>();
+        mergedInputs.add("a");
+        mergedInputs.add("b");
+        mergedInputs.add("c");
+        mergedInputs.add("d");
+        List<String> mergedOutput = ListExamples.merge(input1, input2);
+        for(int i = 0; i < mergedInputs.size(); i++){
+            assertEquals(mergedInputs.get(i), mergedOutput.get(i));
+        }
+    }
+```
+
+Symptom:
+
+![image4](week3pictures/1.png)
+
+Fixed code:
+
+```
+```
+
