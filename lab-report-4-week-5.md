@@ -155,3 +155,13 @@ Arjun Suresh Kumar@ARJUN-M15 MINGW64 ~/Documents/Programming/FA22/skill-demo1/te
 $ find 911* -maxdepth 0
 911report
 ```
+
+find -delete: This command line option tells the find command to delete all files that it finds. This is useful because it allows the user to avoid a pipe, and easily delete files matching a certain pattern.
+```
+Arjun Suresh Kumar@ARJUN-M15 MINGW64 ~/Documents/Programming/FA22/skill-demo1/technical (main)
+$ find 911* -delete
+
+Arjun Suresh Kumar@ARJUN-M15 MINGW64 ~/Documents/Programming/FA22/skill-demo1/technical (main)
+$ find 911*
+find: ‘911*’: No such file or directory
+```
