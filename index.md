@@ -10,3 +10,5 @@
 [Lab Report 4 (Week 5 - More Command Line)](lab-report-4-week-5.html)
 
 [Lab Report 5 (Week 7 - Vim Commands)](lab-report-5-week-7.html)
+
+[Lab Report 6 (Week 9 - Autograder)](lab-report-6-week-9.html)
