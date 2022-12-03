@@ -3,7 +3,9 @@
 Keystrokes necessary to perform the following task:
 
 ```
-Challenge In TestDocSearch.java, copy the test called testSearchCount, rename the new test to testSearchCount2 and change the query string being tested to tax rather than taxation.
+Challenge In TestDocSearch.java, copy the test called testSearchCount, rename the 
+new test to testSearchCount2 and change the query string being tested to tax rather 
+than taxation.
 ```
 
 Keystrokes:
@@ -23,9 +25,12 @@ vim T <TAB> <ENTER>
 /xa <ENTER>
 6xix <ESC>
 <ENTER>
-6xix <ESC> :wq
 ```
 ![image3](week7pictures/3.png)
+
+```
+6xix <ESC> :wq
+```
 
 ![image4](week7pictures/4.png)
 
